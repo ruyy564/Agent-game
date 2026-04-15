@@ -1,10 +1,13 @@
+import { StoreProvider, RouterProvider } from './app/providers';
+
+/**
+ * Корневой компонент приложения
+ */
 function App() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <h1 className="text-4xl font-bold text-primary">
-        Cyber Security Detective
-      </h1>
-    </div>
+    <StoreProvider>
+      <RouterProvider />
+    </StoreProvider>
   );
 }
 
